@@ -3,8 +3,10 @@ import GraphQLHTTP from "express-graphql";
 
 import { printSchema } from "graphql/utilities/schemaPrinter";
 
+import { graphqlSchema } from "../models/graphql/schema-index";
+
 // example schema
-import { graphqlSchema } from "../ex.schema";
+// import { graphqlSchema } from "../ex.schema";
 
 export class GraphQLRoutes {
     static map(app: express.Application): void {
